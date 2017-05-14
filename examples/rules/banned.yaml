@@ -1,0 +1,6 @@
+containers:
+- image: ^httpd:2.2.*$
+- image: ^nginx$
+name: banned
+namespace: ^default$
+reason: I don't like this images
