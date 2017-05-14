@@ -1,0 +1,32 @@
+package: github.com/tczekajlo/kir
+import:
+- package: github.com/bgentry/speakeasy
+- package: github.com/coreos/etcd
+  subpackages:
+  - clientv3
+  - clientv3/clientv3util
+  - clientv3/namespace
+  - etcdserver/api/v3rpc/rpctypes
+  - pkg/transport
+- package: github.com/coreos/pkg
+  subpackages:
+  - capnslog
+- package: github.com/fvbock/endless
+- package: github.com/ghodss/yaml
+- package: github.com/gin-gonic/gin
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: github.com/olekukonko/tablewriter
+- package: github.com/spf13/cobra
+  version: 10f6b9d7e1631a54ad07c5c0fb71c28a1abfd3c2
+- package: github.com/spf13/viper
+- package: github.com/spf13/pflag
+  version: 2300d0f8576fe575f71aaa5b9bbe4e1b0dc2eb51
+- package: google.golang.org/grpc
+  version: 4eaacfed9779ee7568c9e72e9f763dbd3af8e0b4
+- package: golang.org/x/net
+  version: f2499483f923065a842d38eb4c7f1927e6fc6e6d
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/apis/meta/v1

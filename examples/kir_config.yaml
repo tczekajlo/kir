@@ -1,0 +1,24 @@
+# Configuration file for KIR
+# All options can be overridden by flags
+
+server:
+  listen: ":8081"
+  tls:
+    enabled: false
+    cacert_file: "ca.crt"
+    cert_file: "cert.crt"
+    key_file: "key.crt"
+    require_and_verify_client_cert: false
+
+etcd:
+  cacert: "ca.crt"
+  cert: "cert.crt"
+  key: "key.crt"
+  command_timeout: "5s"
+  dial_timeout: "2s"
+  endpoints:
+    - "http://localhost:2379"
+  insecure_skip_tls_verify: false
+  insecure_transport: true
+  prefix: "/kir/"
+  user: "" # username[:password] for authentication

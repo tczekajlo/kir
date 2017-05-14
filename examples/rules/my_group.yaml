@@ -1,0 +1,7 @@
+allowed: true
+annotations:
+  mycluster.image-policy.k8s.io/.*: break-glass
+containers:
+- image: .
+name: my_group
+namespace: .

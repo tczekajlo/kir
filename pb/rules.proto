@@ -1,0 +1,21 @@
+syntax = "proto3";
+package pb;
+
+message Rule {
+  string name = 1;
+  bool allowed = 2;
+
+  message Containers {
+    string image = 1;
+  }
+
+  repeated Containers containers = 3;
+
+  string namespace = 4;
+  map<string, string> annotations = 5;
+  string reason = 6;
+}
+
+message RulesList {
+  repeated Rule rule = 1;
+}
